@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -6,8 +6,7 @@ body {
   padding: 0;
   font-family: "Muli", sans-serif;
   background-color: #8f57fd;
- /*  overflow-x: hidden; */
-  
+  /*  overflow-x: hidden; */
 }
 /*------------- Header -------------*/
 .header {
@@ -96,7 +95,7 @@ ul:hover {
 }
 
 /* --------------- Carousel --------------------- */
-.categories__title{
+.categories__title {
   color: white;
   font-size: 16px;
   position: absolute;
@@ -128,23 +127,23 @@ ul:hover {
   cursor: pointer;
   transition: 450ms all;
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
   position: relative;
 }
-.carousel-item:hover ~ .carousel-item{
+.carousel-item:hover ~ .carousel-item {
   -webkit-transform: translate3d(100px, 0, 0);
-          transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
 }
 /* .carousel__container:hover .carousel-item{
   opacity: 0.3;
 }  */
-.carousel__container:hover .carousel-item:hover{
+.carousel__container:hover .carousel-item:hover {
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   opacity: 1;
 }
 .carousel::-webkit-scrollbar {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   display: none;
 }
 
@@ -152,11 +151,15 @@ ul:hover {
   width: 200px;
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.carousel-item__details{
+.carousel-item__details {
   align-items: flex-start;
-  background: linear-gradient(to top, rgba(0, 0, 0 , 0.9) 0%,rgba(0, 0, 0 , 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   display: flex;
   font-size: 10px;
   flex-direction: column;
@@ -173,7 +176,7 @@ ul:hover {
 .carousel-item:hover .carousel-item__details {
   opacity: 1;
 }
-.carousel-item__details--img{
+.carousel-item__details--img {
   width: 20px;
 }
 .carousel-item__details--title {
@@ -185,4 +188,24 @@ ul:hover {
   color: white;
   font-size: 8px;
   margin: 3px 0px;
+}
+/* -------- footer --------- */
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
